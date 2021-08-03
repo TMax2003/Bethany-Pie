@@ -1,0 +1,218 @@
+
+/* BASIC CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #2d2d2d;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    text-rendering: optimizeLegibility;
+}
+
+/* REUSABLE COMPONENTS CSS */
+
+section {
+    padding: 80px 0;
+}
+
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* PARAGRAPHS */
+.long-copy {
+    line-height: 130%;
+    width: 100%;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* HEADING */
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 180%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+/* HEADER CSS */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(img/bethany-fullsize.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #fff;        
+}    
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative; }
+
+.btn:hover {
+  transform: translateX(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateX(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn-white {
+  background-color: #fff;
+  color: #777; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.btn-white:after {
+  background-color: #fff; }
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
+
+
+
+/* ABOUT US CSS */
+.section-about {
+    background-color: #dcdcdc;
+}
+
+.heading-secondary {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding: 5px 0;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* PRODUCTS CSS */
+
+.section-products {
+    padding: 0;
+}
+
+.products-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.products-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.products-picture {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.products-picture img {
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    transition: transform 0.5s, opacity 0.6s;
+}
+
+.products-picture img:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* FOOTER CSS */
+
+
+/* CONTACT FORM*/
